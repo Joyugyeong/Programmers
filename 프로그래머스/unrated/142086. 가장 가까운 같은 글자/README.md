@@ -1,10 +1,10 @@
 # [unrated] 가장 가까운 같은 글자 - 142086 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/142086#qna) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/142086) 
 
 ### 성능 요약
 
-메모리: 72.9 MB, 시간: 1.21 ms
+메모리: 82.5 MB, 시간: 3.78 ms
 
 ### 구분
 

@@ -1,20 +1,12 @@
 import java.util.*;
 class Solution {
-
-    public static int[] solution(String s) {
-        int[] answer = new int[s.length()];
-        int[] alpha = new int[26];
-
-        Arrays.fill(alpha, -1);
-        for (int i = 0; i < s.length(); i++) {
-
-            if (alpha[s.charAt(i) - 'a'] > -1) {
-                answer[i] = i - alpha[s.charAt(i) - 'a'];
-                alpha[s.charAt(i) - 'a'] = i;
-                continue;
-            }
-            alpha[s.charAt(i) - 'a'] = i;
-            answer[i] = -1;
+    public int[] solution(String s) {
+        int[] answer = new int [s.length()];
+        HashMap<Character,Integer> map = new HashMap<>();
+        for(int i=0;i<s.length();i++){
+            char ch = s.charAt(i);
+            answer[i]=i-map.getOrDefault(ch,i+1);
+            map.put(ch,i);
         }
         return answer;
     }
